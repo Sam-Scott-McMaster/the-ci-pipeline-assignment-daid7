@@ -1,5 +1,6 @@
 /* Danny, 400505160, 2024/09/18
- *
+ * Quiz utility that allows quizzes users on three different questions and
+ * answers, based on linux command line, git and c code knowledge.
  *
  */
 
@@ -32,8 +33,9 @@ int main(int argc, char *argv[]) {
                         puts(question3);
 			return EXIT_SUCCESS;
 		} else if (strcmp(argv[1], "--help") == 0) {
-                        puts("quiz [-#] gets question #");
-			puts("quiz [-#] [<answer>] check your answer");
+                        puts("quiz    [-#]                   gets question #");
+			puts("quiz    [-#]     [<answer>]    check your answer");
+			puts("quiz    --help                 more help");
 			return EXIT_SUCCESS;
 		} else {
 			puts("Usage: quiz [-#] [<answer>]");
